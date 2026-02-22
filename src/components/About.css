@@ -1,0 +1,161 @@
+.about {
+  background: var(--bg);
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  color: var(--text);
+}
+
+.section-title .accent {
+  color: var(--accent);
+  margin-right: 0.5rem;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.quick-facts {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: var(--surface);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border);
+}
+
+.fact {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.fact:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.fact-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.fact-value {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.about-visual {
+  position: relative;
+}
+
+.code-snippet {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.snippet-header {
+  background: var(--surface-elevated);
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.red { background: #ff5f56; }
+.dot.yellow { background: #ffbd2e; }
+.dot.green { background: #27c93f; }
+
+.file-name {
+  margin-left: auto;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.snippet-code {
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.snippet-code > div {
+  margin-bottom: 0.3rem;
+}
+
+.indent1 { padding-left: 2rem; }
+.indent2 { padding-left: 4rem; }
+.indent3 { padding-left: 6rem; }
+
+.keyword {
+  color: #c792ea;
+}
+
+.class-name {
+  color: #ffcb6b;
+}
+
+.function {
+  color: #82aaff;
+}
+
+.string {
+  color: #c3e88d;
+}
+
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .code-snippet {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about-text p {
+    font-size: 1rem;
+  }
+  
+  .snippet-code {
+    font-size: 0.8rem;
+  }
+}
