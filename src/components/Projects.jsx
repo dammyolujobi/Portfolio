@@ -11,6 +11,15 @@ const projectData = [
     link: "https://github.com/dammyolujobi/todo-cli"
   },
   {
+    title: "SpendLens",
+    type: "Personal Finance Web App",
+    description: "expense tracking app focused on simple budgeting and spending insights. helps users monitor habits and make better financial decisions with a clean dashboard experience.",
+    tech: ["React", "JavaScript", "Vercel"],
+    impact: "makes spending trends easy to understand at a glance",
+    link: "https://github.com/dammyolujobi/spendlens",
+    liveLink: "https://spendlens-fd.vercel.app/"
+  },
+  {
     title: "E-commerce Platform",
     type: "Full-Stack Backend",
     description: "backend for an e-commerce app. Flask APIs handling products, orders, inventory. React frontend consuming the API. MongoDB for data. actually deployed and working.",
@@ -33,15 +42,7 @@ const projectData = [
     tech: ["Python", "pandas", "scikit-learn", "SQL"],
     impact: "identifies at-risk students early",
     link: "https://github.com/dammyolujobi/Student-Performance-Predictor"
-  },
-  {
-    title: "Hostel Management System",
-    type: "Full-Stack Application",
-    description: "comprehensive system for managing hostel operations. built with TypeScript for type safety. handles room allocation, student records, and facility management.",
-    tech: ["TypeScript", "Node.js", "PostgreSQL", "Express"],
-    impact: "streamlines hostel admin tasks",
-    link: "https://github.com/dammyolujobi/HOSTEL-MANAGEMENT-SYSTEM"
-  },
+  }
 ]
 
 const Projects = () => {
@@ -91,6 +92,12 @@ const Projects = () => {
                 {project.link && (
                   <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link mono">
                     view on github →
+                  </a>
+                )}
+
+                {project.liveLink && (
+                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="project-link mono">
+                    view live demo →
                   </a>
                 )}
               </motion.div>
