@@ -59,7 +59,7 @@ const About = () => {
                 <div className="snippet-code mono">
                   <div><span className="keyword">class</span> <span className="class-name">BackendDeveloper</span>:</div>
                   <div className="indent1"><span className="keyword">def</span> <span className="function">__init__</span>(self):</div>
-                  <div className="indent2">self.name = <span className="string">"Olujobi David"</span></div>
+                  <div className="indent2">self.name = <span className="string">"Olujobi Damilola"</span></div>
                   <div className="indent2">self.location = <span className="string">"Nigeria"</span></div>
                   <div className="indent2">self.languages = [</div>
                   <div className="indent3"><span className="string">"Python"</span>,</div>

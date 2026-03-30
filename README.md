@@ -1,4 +1,4 @@
-# Olujobi David - React Portfolio
+# Olujobi Damilola - React Portfolio
 
 backend developer portfolio. clean, simple, dark mode only.
 

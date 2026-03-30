@@ -40,7 +40,7 @@ function App() {
       <footer className="footer">
         <div className="container">
           <p className="mono">built with react + rust vibes 🦀</p>
-          <p className="mono">© 2026 Olujobi David</p>
+          <p className="mono">© 2026 Olujobi Damilola</p>
         </div>
       </footer>
     </div>

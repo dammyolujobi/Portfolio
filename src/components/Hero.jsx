@@ -52,7 +52,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            I'm <span className="gradient-text">Olujobi David</span>
+            I'm <span className="gradient-text">Olujobi Damilola</span>
           </motion.h1>
           
           <motion.div 
@@ -73,7 +73,7 @@ const Hero = () => {
             transition={{ delay: 0.8 }}
           >
             building backend systems and APIs that actually work.<br/>
-            CS student @ Covenant University who likes rust and clean code.
+            CS student who loves solving real world problems.
           </motion.p>
           
           <motion.div 
